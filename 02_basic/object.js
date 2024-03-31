@@ -53,5 +53,22 @@ const obj2= {
 // console.log(Object.values(user))
 // console.log(Object.entries(user))
 
-console.log(user.hasOwnProperty('name'))
-console.log(user.hasOwnProperty('Name'))
+// console.log(user.hasOwnProperty('name'))
+// console.log(user.hasOwnProperty('Name'))
+
+
+//***************** Desturcturing of Object *****************
+
+const course= {
+    courseName: "JS in Hindi",
+    price: 999,
+    courseInstructor: "Hitesh"
+}
+
+// course.courseInstructor
+
+// const {courseInstructor}= course
+// const {courseInstructor: instructor}= course
+
+// console.log(courseInstructor)
+// console.log(instructor)
