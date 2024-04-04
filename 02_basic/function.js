@@ -23,8 +23,27 @@
 
 /****************Rest Operator*****************/
 
-function addNumbers(...num){
-    return num
-}
+// function addNumbers(...num){
+//     return num
+// }
 
-console.log(addNumbers(5,9,90,100));
+// console.log(addNumbers(5,9,90,100));
+
+// const obj = {
+//     name: 'Gobinda Barman',
+//     age: 20
+// }
+
+// function userDetails(user){
+//     return `The user name is ${user.name}, and age is ${user.age}`
+// }
+
+// console.log(userDetails(obj))
+
+// const array= [100,200,300,400]
+
+// function getArray(arr){
+//     return `the second element of array= ${arr[1]}`
+// }
+// console.log(getArray(array))
+
