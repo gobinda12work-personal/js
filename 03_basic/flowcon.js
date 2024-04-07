@@ -33,3 +33,33 @@
 //     i++
 // }
 
+// const arr = ["Jiban", "Rahul", "Sonam", "Suraj"]
+
+// let i=0
+// while(i<arr.length){
+//     const element= arr[i]
+//     console.log(element)
+//     i+=1
+// }
+
+// let i=0
+// while(i<=10){
+//     console.log(i)
+//     i=i+2
+// }
+
+// const arr1= ["Gobinda", "Suman", "Rohit", "Subham"]
+
+// for (const item of arr1) {
+//     if (item === "Rohit") continue
+//     console.log(`The name is ${item}`)
+    
+// }
+
+// const str="Suraj kapur"
+
+// for (const item of str) {
+//     if(item === ' ') continue
+//     console.log(`The letter of the name is , ${item}`)
+// }
+
