@@ -18,11 +18,45 @@
     <h2>This is what in your mind</h2>
     <h2>This is what in your mind</h2>
     <input type="password" name="" id="">
-    <ul>
+    <!-- <ul>
         <li>one</li>
         <li>two</li>
         <li>three</li>
-    </ul>
+    </ul> -->
    </div> 
+
+   <div>
+    <ul class="parent">
+        <li class="day">Monday</li>
+        <li class="day">Tuesday</li>
+        <li class="day">Wednesday</li>
+        <li class="day">Thursday</li>
+    </ul>
+   </div>
 </body>
+
+<script>
+    const parent= document.querySelector('.parent')
+    // console.log(parent)
+    // console.log(parent.children)
+    // console.log(parent.children[1])
+    // console.log(parent.children[1].innerHTML)
+    // parent.children[1].style.color= 'red'
+
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     const element = parent.children[i].innerHTML;
+    //     console.log(element)
+    // }
+
+    // console.log(parent.firstElementChild)
+    // console.log(parent.lastElementChild)
+
+    const day= document.querySelector('.day')
+    // console.log(day)
+    // console.log(day.parentElement)
+    // console.log(document.querySelector('li'))
+    // console.log(document.querySelector('li').parentElement)
+
+        console.log(day.nextElementSibling)
+</script>
 </html>
