@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM Learning</title>
+</head>
+<body>
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+        const ul= document.querySelector('.language')
+        const li= document.createElement('li')
+        const addText= document.createTextNode(langName)
+        li.appendChild(addText)
+        ul.appendChild(li)
+        // document.body.appendChild(ul) // There is no need to write this code as ul is already append in the body , we just have to append li in ul the element we automatically show in the web page
+    }
+
+    addLanguage("Python")
+    addLanguage("Java")
+    addLanguage("rubby")
+    addLanguage("cpp")
+    addLanguage("typeScript")
+</script>
+</html>

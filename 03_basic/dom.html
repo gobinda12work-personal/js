@@ -64,7 +64,11 @@
     console.log(div)
     div.id= "main"
     div.className= "myClass"
-    div.innerHTML= "This is my div"
+    // div.innerHTML= "This is my div"
+        const addText= document.createTextNode("This is my  div")
+        div.appendChild(addText)
     document.body.appendChild(div)
+    div.setAttribute('title','myDiv')
+    
 </script>
 </html>
