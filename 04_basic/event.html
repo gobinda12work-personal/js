@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events of JavaScript</title>
+    <style>
+        img{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            object-position: 0px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li><img src="https://images.pexels.com/photos/17290327/pexels-photo-17290327/free-photo-of-photoshoot-with-joana-slva.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" id="lady1" /*onclick="alert('Lady clicked')"*/></li>
+            <li><img src="https://images.pexels.com/photos/21404211/pexels-photo-21404211/free-photo-of-love.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load" alt="" id="couple"></li>
+            <li><img src="https://images.pexels.com/photos/1073785/pexels-photo-1073785.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load" alt="" id="donkey"></li>
+            <li><img src="https://images.pexels.com/photos/20882949/pexels-photo-20882949/free-photo-of-young-woman-sitting-next-to-green-plants.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load" alt="" id="lady2"></li>
+            <li><img src="https://images.pexels.com/photos/20957444/pexels-photo-20957444/free-photo-of-empty-road.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load" alt="" id="forest"></li>
+            <li><img src="https://images.pexels.com/photos/19404767/pexels-photo-19404767/free-photo-of-man-in-jacket-standing-in-mountains.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load" alt="" id="mountain"></li>
+            <li><a href="https://www.google.com" target="_blank">Google Link</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    // document.getElementById('lady1').onclick = function(){
+    //     alert('Lady clicked')   // this process has less features so we are not gonna use this 
+    // }
+
+    // document.getElementById('lady1').addEventListener('click',function(){
+    //     alert('Lady clicked')  // In most of the case we are gonna use this method because it has more features // Read about all the types of event 
+    // },false) // Here the third parameter is by default false this is cause of event bubling
+
+    // attachEvent() // It was used early time in internal explorer
+    // In 'jQuery frame work'- on (.on in the place of .addEventListener) is used
+    
+    // type, keyboard type event, mouse type event, timestamp
+    // preventDefault // You cant prevent the default behaviour of any tag like 'form' tag 'anchor' tag
+    // target, toElement, srcElement (this is most imp), currentTarget
+    // clientX, clientY, screenX, screenY, tiltX, tiltY 
+    // and see the others which seems you to be important
+    // altkey, ctrlkey, shiftkey, keyCode "What is the key code of A what is the key code of B"
+    
+    document.getElementById('lady1').addEventListener('click',function(e){
+        console.log(e)
+    },false)
+
+</script>
+</html>
