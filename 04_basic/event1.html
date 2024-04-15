@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubling and Event Capturing</title>
+    <style>
+        img{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul id="images">
+            <li><img src="https://images.pexels.com/photos/2099737/pexels-photo-2099737.jpeg?auto=compress&cs=tinysrgb&w=300" alt="" id="flower1"></li>
+            <li><img src="https://images.pexels.com/photos/250591/pexels-photo-250591.jpeg?auto=compress&cs=tinysrgb&w=300" alt="" id="flower2"></li>
+            <li><img src="https://images.pexels.com/photos/381739/pexels-photo-381739.jpeg?auto=compress&cs=tinysrgb&w=300" alt="" id="flower3"></li>
+            <li><img src="https://images.pexels.com/photos/122737/pexels-photo-122737.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" id="flower4"></li>
+            <li><img src="https://images.pexels.com/photos/372166/pexels-photo-372166.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" id="rabbit"></li>
+        </ul>
+    </div>
+</body>
+<script>
+    // Following we are gonna discuss event bubling and event capturing
+    // document.getElementById('images').addEventListener('click',function(){
+    //     console.log('Clicked inside the ul')
+    // },false)
+    // document.getElementById('flower1').addEventListener('click',function(){
+    //     console.log('Clicked flower1') // this is all about event bubling 
+    
+    // },false)
+    // document.getElementById('images').addEventListener('click',function(){
+    //     console.log('Clicked inside the ul')
+    // },true)
+    // document.getElementById('flower1').addEventListener('click',function(){
+    //     console.log('Clicked flower1') // this is all about event capturing 
+    // },true)
+    
+    document.getElementById('images').addEventListener('click',function(){
+        console.log('Clicked inside the ul')
+    },false)
+    document.getElementById('flower1').addEventListener('click',function(e){
+        console.log('Clicked flower1') 
+        e.stopPropagation() // this code is used for basically stop the propagation of event bubling
+    },false)
+
+</script>
+</html>
