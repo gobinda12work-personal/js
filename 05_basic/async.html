@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Learning</title>
+</head>
+<body>
+    <h1>Async Learning API Calling</h1>
+    <!-- setTimeout, setInterval, clearTimeout, clearInterval these are the functions that we get from the browser that help to call the API (Application Programming Interface) -->
+
+    <button id="stop">Stop</button>
+
+
+</body>
+<script>
+    // const namePrint= function(){
+    //     console.log('Gobinda Barman') 
+    // }
+    // setTimeout(namePrint,2000) // setTimeout call the API of the browser and say the API to do the handler function within 2 second.
+
+    const h1= document.querySelector('h1')
+    const changeHeading= function(){
+        h1.innerHTML= "API Including with JavaScript helps to Execute the code fast"
+    }
+    const changeh1= setTimeout(changeHeading, 3000) // This function calls the API
+
+    const stop= document.getElementById('stop')
+
+    stop.addEventListener('click',function(){
+        clearTimeout(changeh1)          // When the button clicked the function will run and clear the setTimeout method.
+        console.log('button clicked') 
+    },false)
+
+</script>
+</html>
