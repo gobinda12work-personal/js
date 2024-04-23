@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Learning API Calling</title>
+</head>
+<body>
+    <h1>Learning Async and Calling the API</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // const namePrint= function(){
+    //     console.log('Gobinda', Date.now())
+    // }
+    // const namep= setInterval(namePrint,1000)
+    // clearInterval(namep)
+
+    const start= document.querySelector('#start')
+    const stop= document.querySelector('#stop')
+
+    let sayName=""
+    start.addEventListener('click',function(){
+        sayName= setInterval(function(){
+            console.log('Gobinda', Date.now())
+        },1000)
+    },false)
+
+    stop.addEventListener('click',function(){
+        clearInterval(sayName)
+        console.log('Stopped')
+    },false)
+</script>
+</html>
